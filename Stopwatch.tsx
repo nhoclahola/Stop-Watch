@@ -113,7 +113,7 @@ function Stopwatch(): React.JSX.Element {
 			</View>
 			<View style={styles.buttonAndLapWrapper}>
 				<View style={styles.buttonWrapper}>
-					<TouchableOpacity onPress={handleAddLap} disabled = {!isRunning}>
+					<TouchableOpacity onPress={handleAddLap}>
 						<View style={{...styles.button, backgroundColor: isRunning ? '#4a4c4f' : '#3D3D3D'}}>
 							<Text style={{color: 'gray'}}>{isRunning ? 'Lap' : 'Reset'}</Text>
 						</View>
